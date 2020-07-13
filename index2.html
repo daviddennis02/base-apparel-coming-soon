@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Josephin Sans', sans-serif;
+            font-size: 16px;
+            height: 100vh;
+        }
+
+        .container1 {
+            background: linear-gradient(135deg, #ffffff 0%, #fff5f5 98%);
+
+            display: grid;
+            grid-template-columns: 60% 40%;
+            /* row-gap: 1em; */
+            gap: 2em ;
+            grid-auto-rows: minmax(100px, auto);
+            justify-items: center ;
+            align-items: center;
+        }
+
+        .container1>div {
+            padding: 1em;
+        }
+
+        .section1 {
+            background: url(images/bg-pattern-desktop.svg);
+            align-self: center;
+            justify-self: center;
+        }
+
+        .section2{
+            align-self: start;
+            justify-self: center;
+        }
+        .form {
+        display: inline-flex;
+        flex-direction: row;
+        }
+
+        input[type=email] {
+        color: #ce9797;
+        border-radius: 10rem;
+        border: 1px solid #ce9797;
+        /* height: 10px; */
+        width: auto;
+        margin: 1em .5em;
+        padding: 1.5em;
+        }
+
+        input[type=email]:focus {
+        color: #ce9797 !important;
+        border-radius: 10rem !important;
+        border: 1px solid #ce9797;
+        }
+
+        input[type=email]::placeholder {
+        color: #ce9797;
+        font-family: 'Josefin Sans',
+        sans-serif;
+        }
+
+        input[type=email]::-webkit-input-placeholder {
+        color: #ce9797;
+        font-family: 'Josefin Sans',
+        sans-serif;
+        }
+
+        .form button {
+        background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        border: none;
+        border-radius: 2.5em;
+        padding: 1.5em;
+        width: 100px;
+        margin: 1em auto;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container1">
+
+        <div class="section1">
+            <div class="logo">
+                <img src="images/logo.svg" alt="base-apparel logo">
+            </div>
+            <!-- <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab id ratione quod. Exercitationem accusantium
+                dignissimos inventore eligendi earum modi, repellat ducimus facere excepturi ad sit possimus ullam
+                corrupti
+                ipsam fugit? Ipsa libero adipisci est amet veritatis, culpa, debitis itaque aut illo odio ex voluptates
+                eum
+                ea voluptas? Fuga neque quibusdam iste in illo maxime iusto accusamus, quidem recusandae nobis harum
+                architecto nam aliquam vitae similique? Aspernatur sequi molestiae aut, impedit laudantium deleniti ea a
+                veniam voluptatem nesciunt saepe, placeat alias voluptatum repellendus labore dolorum maiores, modi
+                deserunt
+                reprehenderit consequuntur libero possimus sapiente? Voluptatum, excepturi reiciendis! Dignissimos iure
+                nemo
+                exercitationem minima.
+            </p> -->
+            <h2 class="content-header"> We're <span>coming soon</span>
+            </h2>
+
+            <p> Hello fellow shoppers! We're currently building our new fashion store.
+                Add your email below to stay up-to-date with announcements and our launch deals.
+            </p>
+
+            <form action="" class="form">
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                <button type="submit" class="button"><i class="arrow"><img src="images/icon-arrow.svg"
+                            alt=""></i></button>
+            </form>
+
+        </div>
+        <div class="section2">
+            <img src="images/hero-desktop.jpg" height="100%" width="100%" alt="">
+            <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci voluptatem vero odio, facere
+                asperiores perferendis non ipsa maiores nulla, unde hic provident earum, animi iusto laboriosam
+                architecto placeat est assumenda?</p> -->
+        </div>
+    </div>
+</body>
+
+</html>
